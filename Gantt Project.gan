@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Administrador de Proyectos" company="" webLink="http://" view-date="2015-12-01" view-index="0" gantt-divider-location="370" resource-divider-location="300" version="2.8.1" locale="es">
+    <description/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="265" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="15" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="71" order="2"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="taskLabelDown" value=""/>
+        <option id="taskLabelLeft" value="length"/>
+        <option id="taskLabelRight" value="resources"/>
+        <option id="color.recent"><![CDATA[#0033ff #ccff00 #f4f4f4 #ff9999 #000099 #000000 #66ff66 #996600 #cc00cc #ffffff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="148" order="0"/>
+        <field id="1" name="Función" width="148" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="36" name="Levantamiento de informacion" meeting="false" start="2016-02-15" duration="15" complete="0" expand="true">
+            <task id="0" name="Busqueda de la empresa" color="#000099" meeting="false" start="2016-02-15" duration="5" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Elaboración de instrumento para la recolección de información" color="#000099" meeting="false" start="2016-02-22" duration="5" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Entrevista" color="#000099" meeting="false" start="2016-02-29" duration="5" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="37" name="Analisis" meeting="false" start="2016-03-07" duration="35" complete="0" expand="true">
+            <task id="11" name="Informe resultados" color="#ccff00" meeting="false" start="2016-03-07" duration="5" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Diseño diagrama de casos de uso" color="#ccff00" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2016-03-14" duration="4" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" name="Definición de requerimientos" color="#ccff00" meeting="false" start="2016-03-18" duration="4" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="Especificación de requerimientos" color="#ccff00" meeting="false" start="2016-03-24" duration="3" complete="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Analisis de los requerimientos" color="#ccff00" meeting="false" start="2016-03-30" duration="18" complete="0" expand="true"/>
+        </task>
+        <task id="33" name="Presentación del proyecto No1" color="#ccff00" meeting="false" start="2016-03-29" duration="1" complete="0" expand="true"/>
+        <task id="55" name="Planeacion" color="#000000" meeting="false" start="2016-04-25" duration="71" complete="0" expand="true">
+            <task id="56" name="Informe de resultados del analisis" color="#996600" meeting="false" start="2016-04-25" duration="8" complete="0" expand="true">
+                <depend id="66" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="66" name="Diseñar arquitectura del softwares(clases,objetos,mecanismos de colaboracion)" color="#996600" meeting="false" start="2016-05-05" duration="8" complete="0" expand="true">
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="Construir el prototipo del sistema de informacion" color="#996600" meeting="false" start="2016-05-17" duration="8" complete="0" expand="true">
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="Elaborar modelo de base de datos" color="#996600" meeting="false" start="2016-05-27" duration="8" complete="0" expand="true">
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="80" name="Elaborar diagrama de distribucion" color="#996600" meeting="false" start="2016-06-08" duration="13" complete="0" expand="true"/>
+            <task id="85" name="Aplicar politicas y mecanismos de control" color="#996600" meeting="false" start="2016-07-12" duration="8" complete="0" expand="true">
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="90" name="Informe de costos, infraestructura tecnologica  y herramientas de implementacion" color="#996600" meeting="false" start="2016-07-22" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="94" name="Ejecucion" color="#000000" meeting="false" start="2016-08-02" duration="95" complete="0" expand="true">
+            <task id="97" name="Elaborar plan de trabajo para la ejecucion del sistema" color="#0033ff" meeting="false" start="2016-08-02" duration="13" complete="0" expand="true">
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" name="Elaborar base de datos" color="#0033ff" meeting="false" start="2016-08-19" duration="9" complete="0" expand="true">
+                <depend id="107" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="107" name="Construir interfaces del sistema de informacion" color="#0033ff" meeting="false" start="2016-09-01" duration="11" complete="0" expand="true">
+                <depend id="111" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="111" name="Realizar el codigo fuente del sistema de informacion" color="#0033ff" meeting="false" start="2016-09-16" duration="11" complete="0" expand="true">
+                <depend id="145" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="145" name="Realizar los paquetes y programas de informacion del sistema de informacion" color="#0033ff" meeting="false" start="2016-10-03" duration="11" complete="0" expand="true">
+                <depend id="149" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="149" name="Elaborar el manual tecnico del sistema" color="#0033ff" meeting="false" start="2016-10-18" duration="10" complete="0" expand="true">
+                <depend id="152" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="152" name="Elaborar el documento de pruebas de software" color="#0033ff" meeting="false" start="2016-11-01" duration="9" complete="0" expand="true">
+                <depend id="153" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="153" name="Elaborar la instalacion de hardware y software" color="#0033ff" meeting="false" start="2016-11-14" duration="8" complete="0" expand="true">
+                <depend id="157" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="157" name="Elaborar cronograma de actividades, plan de instalaciòn" color="#0033ff" meeting="false" start="2016-11-24" duration="8" complete="0" expand="true">
+                <depend id="161" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="161" name="Elaborar y validar con el cliente los manuales de usuario" color="#0033ff" meeting="false" start="2016-12-06" duration="5" complete="0" expand="true"/>
+        </task>
+        <task id="211" name="Evaluacion" color="#000000" meeting="false" start="2017-01-23" duration="99" complete="0" expand="true">
+            <task id="227" name="Diseñar plan de capacitacion de los usuarios" color="#ff9999" meeting="false" start="2017-01-23" duration="10" complete="0" expand="true">
+                <depend id="241" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="241" name="Elaborar informe donde documentar la instalacion configuracion de pruebas" color="#ff9999" meeting="false" start="2017-02-06" duration="7" complete="0" expand="true">
+                <depend id="245" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="245" name="Elaborar informe donde se muestre la distribucion fisica de los equipos" color="#ff9999" meeting="false" start="2017-02-15" duration="1" complete="0" expand="true">
+                <depend id="246" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="246" name="Evaluar proovedores" color="#ff9999" meeting="false" start="2017-02-16" duration="9" complete="0" expand="true">
+                <depend id="279" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="279" name="Elaboracion de contratos" color="#ff9999" meeting="false" start="2017-03-01" duration="9" complete="0" expand="true">
+                <depend id="254" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="254" name="Informe de bienes informaticos, planos de instalación, licencias de software del sistema de información desarrollado" color="#ff9999" meeting="false" start="2017-03-14" duration="8" complete="0" expand="true">
+                <depend id="298" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="298" name="Elaborar informes de los modelos de calidad" color="#ff9999" meeting="false" start="2017-03-24" duration="10" complete="0" expand="true">
+                <depend id="302" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="302" name="Elaborar informes de procesos criticos" color="#ff9999" meeting="false" start="2017-04-07" duration="10" complete="0" expand="true">
+                <depend id="305" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="305" name="Elaborar informes de estandares de calidad" color="#ff9999" meeting="false" start="2017-04-21" duration="14" complete="0" expand="true">
+                <depend id="309" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="309" name="Elaborar y diligenciar los instrumentos para el aseguramiento" color="#ff9999" meeting="false" start="2017-05-11" duration="14" complete="0" expand="true">
+                <depend id="312" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="312" name="Elaborar informe de proceso de gestion de calidad" color="#ff9999" meeting="false" start="2017-05-31" duration="7" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Christian Flórez" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="13.35719729"/>
+        </resource>
+        <resource id="1" name="Marlon Márquez" function="SoftwareDevelopment:8" contacts="" phone="">
+            <rate name="standard" value="13.35719729"/>
+        </resource>
+        <resource id="4" name="Paola Galindo" function="SoftwareDevelopment:2" contacts="" phone="">
+            <rate name="standard" value="13.35719729"/>
+        </resource>
+        <resource id="5" name="Sergio Ruiz" function="SoftwareDevelopment:3" contacts="" phone="">
+            <rate name="standard" value="13.35719729"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="77" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="246" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="107" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="152" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="302" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="312" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="80" resource-id="1" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="111" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="279" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="90" resource-id="1" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="153" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="227" resource-id="1" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="305" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="66" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="97" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="241" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="145" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="161" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="254" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="309" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="72" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="5" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="245" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="5" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="149" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="157" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+        <allocation task-id="298" resource-id="5" function="SoftwareDevelopment:3" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
