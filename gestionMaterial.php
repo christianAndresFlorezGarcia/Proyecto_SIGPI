@@ -83,7 +83,7 @@ include('modals/md_eliminarMaterial.php')
                   <img src="imagenes/logofinal4.png" alt="..." class="img-circle profile_img" >
               </div>
               <div class="profile_info" style="margin-left:35px;">
-                 <h3> <span>BienvenidoS </span></h3>
+                 <h3> <span>Bienvenido</span></h3>
                   <h5><i><?php echo $_SESSION['empleado'];?></i> / <font style="text-transform: uppercase; color:black; "><?php echo $_SESSION['rol'] ?></font></h5>
               </div>
           </div>
